@@ -7,9 +7,9 @@
   "auth_key": "roxbox",
   "commands":[
 			{"title": "Play/Pause", "command": "xdotool key XF86AudioPlay"},
-			{"title": "Skip Track", "command": "xdotool key XF86AudioNext"},
       {"title": "Volume Up", "command": "xdotool key XF86AudioRaiseVolume"},
       {"title": "Volume Down", "command": "xdotool key XF86AudioLowerVolume "},
-      {"title": "Mute", "command": "xdotool key XF86AudioMute"}
+      {"title": "Mute", "command": "xdotool key XF86AudioMute"},
+      {"title": "Skip Track", "command": "xdotool key XF86AudioNext"}
   ]
 }

@@ -27,12 +27,12 @@ var CONTROL_URL = Settings.option('server');
 var AUTH_KEY = Settings.option('authkey');
 var OUTPUT_MODE = Settings.option('commandoutput');
 
-var APP_VERSION = "1.4";
-var ABOUT_TEXT = "Author: Colin Murphy (mrtux@riseup.net)\n\nWebsite: www.mrtux.org/projects/commander";
+var APP_VERSION = "1.0";
+var ABOUT_TEXT = "By: Anrdroid Hell\n\nForked from Commander for Pebble";
 
 // Initial window
 var initWindow = new UI.Card({
-	title: "Pebble Commander",
+	title: "RoxBox",
 	scrollable: true,
 	style: 'small',
 	body: "Getting commands list..."
@@ -57,7 +57,7 @@ else
 
 function sendCommand(id, name) {
 	// Show a card showing that the command was executed
-	var detailCard = new UI.Card({
+	/*var detailCard = new UI.Card({
 		backgroundColor: 'white',
 		textColor: 'black',
 		style: 'small',
@@ -69,7 +69,7 @@ function sendCommand(id, name) {
 
 	// Show the new Card
 	detailCard.show();
-	
+	//OG detailcard bits
 	ajax({url: 'http://' + CONTROL_URL + "/exec/" + AUTH_KEY + "/" + id, type: 'plain'},
 		function (data) {
 			detailCard.subtitle("Command sent");
@@ -95,7 +95,20 @@ function sendCommand(id, name) {
 				detailCard.backgroundColor('red');
 			}
 		}
-	);
+	);*/
+  
+  //mod of detailcard based on peble docs
+  
+  ajax({
+    url: 'http://' + CONTROL_URL + "/exec/" + AUTH_KEY + "/" + id, type: 'plain'},
+    function(data) {
+
+    },
+    function(error) {
+      console.log('Download failed: ' + error);
+    }
+  );
+  
 }
 
 
@@ -117,7 +130,7 @@ function runApp() {
 					title: 'Commands',
 					items: json
 				},{
-					title: 'Commander',
+					title: 'RoxBox Info',
 					items: [
 						{"title": "Connection info"},
 						{"title": "About", "subtitle": "Version " + APP_VERSION}
@@ -192,7 +205,7 @@ function runApp() {
 						var aboutCard = new UI.Card({
 							style: "small",
 							scrollable: true,
-							title: ">_ Commander",
+							title: "RoxBox",
 							subtitle: "Version " + APP_VERSION,
 							body: ABOUT_TEXT
 						});
@@ -218,4 +231,3 @@ function runApp() {
 		}
 	);
 }
-

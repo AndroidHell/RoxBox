@@ -3,8 +3,8 @@
     "capabilities": [
         "configurable"
     ],
-    "companyName": "mrtux@riseup.net",
-    "longName": "Commander for Pebble",
+    "companyName": "Android Hell",
+    "longName": "RoxBox for Pithos",
     "projectType": "pebblejs",
     "resources": {
         "media": [
@@ -32,14 +32,14 @@
         ]
     },
     "sdkVersion": "3",
-    "shortName": "Commander",
+    "shortName": "RoxBox",
     "targetPlatforms": [
         "aplite",
         "basalt"
     ],
-    "uuid": "0e21144a-7aa3-4c63-a6df-70febaf35e07",
+    "uuid": "41992c91-fe13-4a76-b0b0-ecd338d98ac6",
     "versionCode": 1,
-    "versionLabel": "1.2",
+    "versionLabel": "1.0",
     "watchapp": {
         "hiddenApp": false,
         "watchface": false
