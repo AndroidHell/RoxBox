@@ -1,0 +1,15 @@
+{
+  "__comment__": "See README.md for a set up guide.",
+  "host": "0.0.0.0",
+  "port": 5000,
+  "debug_mode": true,
+  "show_output": true,
+  "auth_key": "roxbox",
+  "commands":[
+      {"title": "Volume Up", "command": "xdotool key XF86AudioRaiseVolume"},
+      {"title": "Play/Pause", "command": "xdotool key XF86AudioPlay"},
+      {"title": "Volume Down", "command": "xdotool key XF86AudioLowerVolume "},
+      {"title": "Mute", "command": "xdotool key XF86AudioMute"},
+      {"title": "Skip Track", "command": "xdotool key XF86AudioNext"}
+  ]
+}
