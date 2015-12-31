@@ -3,13 +3,8 @@
 
 **Notes:**
 
-This app is based on Commander for Pebble: http://mrtux.org/projects/commander/
-The git repo can be found here: https://github.com/c0decat/pebble-commander
-
-Thanks to Colin Murphy aka mrtux for letting me use his code!
 ========================================================================
 
-(This isn't added yet. For now, it's a scrollable list.)
 **Clicks:**
 
 + Back: exits app (Handled by OS)
